@@ -12,21 +12,44 @@ For this task you will create an HTML document with the following features:
 
 
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <meta charset="UTF-8">
+  <title>My First HTML Task</title>
 </head>
-  
 <body>
 
+  <!-- Headings -->
+  <h1>Welcome to My First HTML Page</h1>
+  <h2>Learning the Basics</h2>
 
+  <!-- Paragraph -->
+  <p>
+    HTML is the foundation of all websites. It allows us to create content using
+    <strong>structure</strong> and <em>formatting</em>. Learning HTML is an important
+    first step toward becoming a web developer.
+  </p>
 
-  
-  <script src="script.js"></script>
+  <!-- Image from the internet -->
+  <img 
+    src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" 
+    alt="HTML Logo" 
+    width="200"
+  >
+
+  <br><br>
+
+  <!-- Button with prompt -->
+  <button onclick="askName()">Click Me</button>
+
+  <script>
+    function askName() {
+      let name = prompt("What is your name?");
+      if (name) {
+        alert("Nice to meet you, " + name + "!");
+      }
+    }
+  </script>
+
 </body>
-
 </html>
